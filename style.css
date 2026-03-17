@@ -1,0 +1,98 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f7fb;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background: linear-gradient(135deg, #0066cc, #004999);
+  color: white;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1 {
+  font-size: 1.8rem;
+}
+nav a {
+  margin-left: 15px;
+  padding: 10px 18px;
+  border-radius: 8px;
+  background: #004999;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+  text-decoration: none;
+}
+nav a.btn-register { background: #28a745; }
+nav a.btn-login { background: #ffc107; }
+nav a:hover { background: #003366; }
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+  background: #eaf3ff;
+}
+.auth-form, .report-form {
+  max-width: 400px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+}
+.auth-form h2, .report-form h2 {
+  text-align: center;
+  color: #0066cc;
+  margin-bottom: 1em;
+}
+.auth-form input, .report-form input, .report-form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #bbb;
+  margin-bottom: 1em;
+  font-size: 1em;
+}
+.auth-form button, .report-form button, .btn {
+  width: 100%;
+  padding: 12px;
+  background: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 9px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.auth-form button:hover, .report-form button:hover, .btn:hover {
+  background: #218838;
+}
+.items-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+.item-card {
+  background: #fff;
+  padding: 18px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.08);
+  width: 280px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+.item-card img.item-img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+@media (max-width: 600px) {
+  .auth-form, .report-form { padding: 15px 8px; }
+  .items-list { flex-direction: column; align-items: center; }
+}
+.error { color: red; text-align: center; margin-bottom: 1em; }
